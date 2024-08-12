@@ -7,7 +7,7 @@ let conversationHistory = [];
 export async function POST(req) {
     const openai = new OpenAI({
         baseURL: process.env.NEXT_PUBLIC_OPENROUTER_ENDPOINT,
-        apiKey: process.env.NEXT_PUBLIC_OPENROUTER_API_KEY,
+        apiKey: process.env.OPENROUTER_API_KEY,
     });
 
     const { userinfo, messages }  = await req.json();

@@ -50,11 +50,11 @@ npm install
 ```
 
 4. Set up environment variables:
-Create a `.env` file in the root directory of your project & add the following environment variables:
+Create a `.env.local` file in the root directory of your project & add the following environment variables:
 
 ```bash
 NEXT_PUBLIC_OPENROUTER_ENDPOINT=your_openrouter_endpoint
-NEXT_PUBLIC_OPENROUTER_API_KEY=your_openrouter_api_key
+OPENROUTER_API_KEY=your_openrouter_api_key
 ```
 
 Replace the placeholder values (`your_openrouter_endpoint`, `your_openrouter_api_key`, etc.) with your actual OpenRouter credentials.
