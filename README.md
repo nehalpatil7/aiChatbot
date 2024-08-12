@@ -1,36 +1,109 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AI-Powered Customer Support Chatbot
 
-## Getting Started
+## Project Overview
 
-First, run the development server:
+This project is an AI-powered Customer Support System, developed as part of the Headstarter AI Fellowship. It features general query support, personalized customer support queries and AI-powered general knowledge query switch to make the bot answer any question you throw at it.
+
+![Dashboard Screenshot - White](ai-cs-white.png)
+![Dashboard Screenshot - Black](ai-cs-black.png)
+
+## 🌟 Features
+
+- Customer Support chatbot for Headstarter AI platform
+- AI-powered chats
+- Smart and personalizable chats for better user experience
+- Dark mode for comfortable viewing
+- Responsive design for various screen sizes
+
+## 🛠️ Technologies Used
+
+- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org/)
+- [OpenAI API](https://openai.com/api/)
+- [OpenRouter API](https://openrouter.ai/docs/quick-start)
+- [Material-UI](https://material-ui.com/)
+
+## 🚀 Live Demo
+
+Check out the live demo deployed on Vercel: [\[Click Here!\]](https://ai-chatbot-theta-red.vercel.app/)
+
+## 🏁 Getting Started
+
+To get a local copy up and running, follow these steps:
+
+1. Clone the repository:
+
+
+```bash
+git clone https://github.com/nehalpatil7/aiChatbot.git
+```
+
+2. Navigate to the project directory:
+
+```bash
+cd ai-cs
+```
+
+3. Install dependencies:
+```bash
+npm install
+```
+
+4. Set up environment variables:
+Create a `.env` file in the root directory of your project & add the following environment variables:
+
+```bash
+NEXT_PUBLIC_OPENROUTER_ENDPOINT=your_openrouter_endpoint
+NEXT_PUBLIC_OPENROUTER_API_KEY=your_openrouter_api_key
+```
+
+Replace the placeholder values (`your_openrouter_endpoint`, `your_openrouter_api_key`, etc.) with your actual OpenRouter credentials.
+
+For the OpenAI API key, sign up at the [OpenRouter website](https://openrouter.ai/) to get your API key.
+
+
+5. Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+6. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🐛 Troubleshooting
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+If you encounter any issues while setting up or running the project, try the following:
 
-## Learn More
+1. Ensure all dependencies are installed:
+```bash
+npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+2. Clear Next.js cache:
+```bash
+rm -rf .next
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Rebuild the project:
+```bash
+npm run build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+4. For OpenAI API issues, verify that your API key is correctly set in the `.env` file and that you have sufficient credits in your OpenAI account.
 
-## Deploy on Vercel
+5. If you're encountering CORS issues with the OpenAI API, ensure that your serverless function (in `pages/api/route.js`) is correctly configured to handle the API request.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 👤 Author
+
+**Nehal Patil**
+
+- LinkedIn: [Nehal Patil](https://www.linkedin.com/in/nehalpatil7/)
+- GitHub: [@nehalpatil7](https://github.com/nehalpatil7)
+
+## 🙏 Acknowledgments
+
+- Headstarter AI Fellowship for the opportunity and support
+- OpenAI for providing the powerful API
+- All contributors and reviewers
+- Bill Zhang for the amazing tutorials
