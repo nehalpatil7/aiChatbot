@@ -16,6 +16,9 @@ This project is an AI-powered Customer Support System, developed as part of the 
 - Responsive design for various screen sizes
 
 ## 🛠️ Technologies Used
+<p align="center">
+    <img src="https://skillicons.dev/icons?i=git,ai,js,nextjs,react,html,materialui" />
+</p>
 
 - [Next.js](https://nextjs.org/)
 - [React](https://reactjs.org/)
